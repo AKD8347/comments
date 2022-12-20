@@ -16,4 +16,93 @@ a:hover, a:focus, a:visited {
   text-decoration: none;
 }
 
+.header {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 101px;
+  background-color: #D9D9D9;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 660px) {
+  .header {
+    height: 68px;
+    margin-bottom: 30px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #D9D9D9;
+  width: 203px;
+}
+@media screen and (max-width: 660px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #fff;
+  width: calc(100% - 203px);
+  align-content: center;
+  padding-left: 86px;
+  padding-right: 129px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 660px) {
+  .content {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.content__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  border-bottom: 3px solid #D9D9D9;
+}
+.content__item {
+  display: block;
+  position: relative;
+  float: left;
+  width: calc(50% - 24px);
+  height: 61px;
+  background-color: #D9D9D9;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 660px) {
+  .content__item {
+    display: none;
+  }
+  .content__item:nth-child(3n) {
+    display: block;
+    width: 100%;
+  }
+}
+.content__item:last-of-type {
+  width: 100%;
+  height: 168px;
+}
+
 /*# sourceMappingURL=styles.css.map */
