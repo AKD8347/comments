@@ -26,7 +26,24 @@
             <div class="content__item"></div>
         </article>
 
-        <div class="comments"></div>
+        <div class="comments">
+
+            <div class="comments__filters"></div>
+
+            <form class="comments__form">
+                <div class="comments__avatar">
+                    <img src="img/user_1.png" alt="user">
+                </div>
+                <div class="comments__area">
+                    <p class="comments__author">Максим Авдеенко</p>
+                    <div id="count" class="comments__symbols">Макс. 1000 символов</div>
+                    <textarea id="mainMSG" class="comments__message" contenteditable="true" cols="70" rows="1" placeholder="Введите текст сообщения..."></textarea>
+                </div>
+
+                <button class="comments__submit" type="submit">Отправить</button>
+            </form>
+
+        </div>
     </section>
 </main>
 
