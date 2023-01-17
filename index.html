@@ -27,26 +27,56 @@
         </article>
 
         <div class="comments">
-
-            <div class="comments__filters"></div>
-
-            <form class="comments__form">
-                <div class="comments__avatar">
-                    <img src="img/user_1.png" alt="user">
-                </div>
-                <div class="comments__area">
-                    <p class="comments__author">Максим Авдеенко</p>
-                    <div id="count" class="comments__symbols">Макс. 1000 символов</div>
-                    <textarea id="mainMSG" class="comments__message" contenteditable="true" cols="70" rows="1" placeholder="Введите текст сообщения..."></textarea>
+            <div class="comments__filters filters-row">
+                <div class="filters-row__item filters-row__item--active filters-row__item--comments">
+                    <div class="filters-row__title">
+                        Комментарии
+                        <span class="filters-row__counter">(80)</span>
+                    </div>
                 </div>
 
-                <button class="comments__submit" type="submit">Отправить</button>
-            </form>
+                <div class="filters-row__item filters-row__item--with-icon">
+                    <div class="filters-select">
+                <span class="filters-row__title filters-select__title">
+                  По количеству оценок
+                </span>
+                        <div class="filters-row__icon filters-select__trigger">
+                            <img src="./img/icons/sm-triangle.svg" alt=""/>
+                        </div>
 
+                        <div class="filters-select__box">
+                            <div class="filters-select__option">По дате</div>
+                            <div class="filters-select__option _active">
+                                По количеству оценок
+                            </div>
+                            <div class="filters-select__option">
+                                По количеству ответов
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filters-row__item filters-row__item--with-icon">
+                    <span class="filters-row__title">Избранное</span>
+                    <div class="filters-row__icon">
+                        <img src="./img/icons/sm-head.svg" alt=""/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comments__list">
+
+            </div>
         </div>
     </section>
 </main>
 
+<script src="js/store.js"></script>
+<script src="js/comment.js"></script>
+<script src="js/author.js"></script>
+<script src="js/commentForm.js"></script>
+<script src="js/sort.js"></script>
+<script src="js/select.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
