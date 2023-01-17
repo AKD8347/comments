@@ -107,7 +107,7 @@ class CommentForm {
                 this.onSubmit({
                     text: this.text,
                     date: Date.now(),
-                    author: new Author({name: 'Максим Авдеенко', icon: '../img/user_1.png'})
+                    author: new Author({name: 'Максим Авдеенко', icon: 'img/user_1.png'})
                 })
 
                 this.text = ''
